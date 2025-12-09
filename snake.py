@@ -194,7 +194,6 @@ def main():
                 score += 1
                 snake.grow += GROWTH
             fruit = Fruit()
-            fruit = Fruit()
 
         if not fruit.update():
             fruit = Fruit()
@@ -230,3 +229,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
