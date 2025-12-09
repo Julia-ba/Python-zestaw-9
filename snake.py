@@ -47,7 +47,7 @@ class Snake:
         dx, dy = self.direction
         new_head = ((x + dx) % WIDTH, (y + dy) % HEIGHT)
 
-        if new_head in self.body:
+        if new_head in self.body[:-1]:
             return False
         self.body.insert(0, new_head)
         if self.grow > 0:
@@ -229,4 +229,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
